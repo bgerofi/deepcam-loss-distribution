@@ -13,7 +13,7 @@ parser = argparse.ArgumentParser(description='plotter')
 parser.add_argument('--input', default="", required=True, help='Input feather')
 parser.add_argument('--output', default="", required=True, help='Output pdf')
 parser.add_argument('--logscale', default=False, action="store_true", required=False, help='')
-parser.add_argument('--split', default=5, required=False, type=int, help='Split at %')
+parser.add_argument('--split', default=None, required=False, type=int, help='Split at %')
 args = parser.parse_args()
 
 
